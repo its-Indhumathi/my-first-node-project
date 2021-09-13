@@ -6,6 +6,10 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    execArgv: [],
+    runner: 'local',
+    hostname: 'localhost',
+    path: '/wd/hub',
     maxInstances: 3,
     capabilities: [{
         maxInstances: 5,
@@ -26,7 +30,11 @@ exports.config = {
     connectionRetryCount: 3,
     services: ['chromedriver'],
     framework: 'mocha',
-    reporters: ['spec'],
+    reporters: ['spec',
+        ['junit', {
+           outputDir: 'testOutput'
+        }]
+    ],
     mochaOpts: {
         ui: 'bdd',
         timeout: 150000
