@@ -1,17 +1,17 @@
-2021-09-08T17:30:59.219Z INFO @wdio/local-runner: Run worker command: run
-2021-09-08T17:30:59.573Z DEBUG @wdio/local-runner:utils: init remote session
-2021-09-08T17:30:59.744Z DEBUG @wdio/local-runner:utils: init remote session
-2021-09-08T17:30:59.745Z INFO webdriver: Initiate new session using the WebDriver protocol
-2021-09-08T17:30:59.788Z INFO webdriver: [POST] http://localhost:9515/session
-2021-09-08T17:30:59.788Z INFO webdriver: DATA {
+2021-09-13T18:05:32.679Z INFO @wdio/local-runner: Run worker command: run
+2021-09-13T18:05:33.028Z DEBUG @wdio/local-runner:utils: init remote session
+2021-09-13T18:05:34.159Z DEBUG @wdio/local-runner:utils: init remote session
+2021-09-13T18:05:34.160Z INFO webdriver: Initiate new session using the WebDriver protocol
+2021-09-13T18:05:34.347Z INFO webdriver: [POST] http://localhost:9515/session
+2021-09-13T18:05:34.347Z INFO webdriver: DATA {
   capabilities: {
     alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
     firstMatch: [ {} ]
   },
   desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
 }
-2021-09-08T17:31:00.998Z INFO webdriver: COMMAND navigateTo("https://www.demoblaze.com/")
-2021-09-08T17:31:00.998Z INFO webdriver: [POST] http://localhost:9515/session/425ab0b0150d24eac0a0b38b8d021a0a/url
-2021-09-08T17:31:00.998Z INFO webdriver: DATA { url: 'https://www.demoblaze.com/' }
-2021-09-08T17:31:01.003Z INFO webdriver: COMMAND deleteSession()
-2021-09-08T17:31:01.005Z INFO webdriver: [DELETE] http://localhost:9515/session/425ab0b0150d24eac0a0b38b8d021a0a
+2021-09-13T18:05:36.861Z INFO webdriver: COMMAND navigateTo("https://www.demoblaze.com/")
+2021-09-13T18:05:36.862Z INFO webdriver: [POST] http://localhost:9515/session/b7c0beda1671fb54aafab7504fd8a8b0/url
+2021-09-13T18:05:36.862Z INFO webdriver: DATA { url: 'https://www.demoblaze.com/' }
+2021-09-13T18:05:36.869Z INFO webdriver: COMMAND deleteSession()
+2021-09-13T18:05:36.870Z INFO webdriver: [DELETE] http://localhost:9515/session/b7c0beda1671fb54aafab7504fd8a8b0

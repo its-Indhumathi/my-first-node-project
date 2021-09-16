@@ -2,3 +2,9 @@
 /report/
 /testOutput/
 .prettierignore
+/package.json
+/package-lock.json
+.github
+/README.md
+/_config.yml
+.prettierrc.js

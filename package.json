@@ -7,13 +7,15 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"android": "",
 		"web": "TAGS='web' PLATFORM='web' wdio config/local/wdio.web.conf.js",
-		"prettier-format": "prettier --config .prettierrc.js --write ."
+		"prettier:check": "prettier --config .prettierrc.js --check .",
+		"prettier:fix": "prettier --config .prettierrc.js --write ."
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@wdio/cli": "^7.12.1"
+		"@wdio/cli": "^7.12.1",
+		"husky": "^7.0.2"
 	},
 	"husky": {
 		"hooks": {

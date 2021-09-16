@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="First describe" timestamp="2021-09-13T19:16:58" time="0.012" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="First describe" timestamp="2021-09-13T23:35:36" time="0.013" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="First describe"/>
       <property name="capabilities" value="chrome.93_0_4577_63.macosx"/>
       <property name="file" value="./test/specs/test1.js"/>
     </properties>
-    <testcase classname="chrome.93_0_4577_63.macosx.First_describe" name="My first test" time="0.01">
+    <testcase classname="chrome.93_0_4577_63.macosx.First_describe" name="My first test" time="0.011">
       <system-out><![CDATA[
-COMMAND: POST /session/5181f3fe69a87043f7dcbb7dad5e45a1/url - {"url":"https://www.demoblaze.com/"}
-COMMAND: DELETE /session/5181f3fe69a87043f7dcbb7dad5e45a1 - {}
+COMMAND: POST /session/b7c0beda1671fb54aafab7504fd8a8b0/url - {"url":"https://www.demoblaze.com/"}
+COMMAND: DELETE /session/b7c0beda1671fb54aafab7504fd8a8b0 - {}
 RESULT: {"url":"https://www.demoblaze.com/"}
 RESULT: {}
 ]]></system-out>
