@@ -8,30 +8,34 @@
 		"android": "",
 		"web": "TAGS='web' PLATFORM='web' wdio config/local/wdio.web.conf.js",
 		"prettier:check": "prettier --config .prettierrc.js --check .",
-		"prettier:fix": "prettier --config .prettierrc.js --write ."
+		"prettier:fix": "prettier --config .prettierrc.js --write .",
+		"prepare": "npm install husky"
 	},
-	"keywords": [],
+	"keywords": [
+		"automation"
+	],
 	"author": "",
 	"license": "ISC",
-	"dependencies": {
-		"@wdio/cli": "^7.12.1",
-		"husky": "^7.0.2"
+	"lint-staged": {
+		"*.js": ["npm run prepare", "npm run prettier:fix"]
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run prettier-format",
-			"pre-push": ""
+			"pre-commit": "npm run lint-staged",
+			"pre-push": "npm run prettier:check"
 		}
 	},
 	"devDependencies": {
 		"@babel/core": "^7.15.5",
 		"@babel/preset-env": "^7.15.4",
 		"@babel/register": "^7.15.3",
+		"@wdio/cli": "^7.12.1",
 		"@wdio/junit-reporter": "^7.12.1",
 		"@wdio/local-runner": "^7.12.1",
 		"@wdio/mocha-framework": "^7.12.0",
 		"@wdio/spec-reporter": "^7.10.1",
 		"chromedriver": "^93.0.1",
+		"husky": "^7.0.2",
 		"prettier": "^2.4.0",
 		"wdio-chromedriver-service": "^7.2.0",
 		"wdio-junit-reporter": "^0.4.4"
